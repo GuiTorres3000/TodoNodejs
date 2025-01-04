@@ -6,10 +6,11 @@ moogose.connect("mongodb://localhost/todo_express", {
     usedUnifiedTopology: true,
 });
 
-app.use(express.urlencoded({ extended: true}))
+app.use(express.urlencoded({ extended: true})) 
+
 app.use(express.static("public"));
 app.set("view engine", "ejs");
-
+ 
 
 
 app.listen(3000, () => console.log("Server lendo na porta 3000"))
